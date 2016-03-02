@@ -9,7 +9,7 @@ node_js:
 env:
   global:
     - APP_NAME=node-mongo-newbuild
-    - secure: JEiqAwFKUDvaZUgPCFFLAifmhGjI1lqugCPxhYfqSzTi+8xwSHmyYjQVLvuw0uy+SxgaMNRXQNoUi3nNaLZVZlqqe0mYwCEj51GRBHBZe6xIGYllfBk+2MnKjPy3t+brIqq7yrLNyMqj8S+MubWpb90ne7ktYpgn52nAe+IPFY1dK3zfaHflCeBb+H8MDAEtRVdEZD5+km6Uw0cO1O0FW6Qer7elLuKIF+qirpHflKBiy5+m+KwMaCXVT6gvp1UCWPnVEtpvqyLJYIjEH3Tr4lvSwx6WpuDUzrmsPFIMg5NPOYRK0oaA4FaSjniGbpmL1DsHohUyTf9Yuv8C+P0n9g==
+   # - secure: JEiqAwFKUDvaZUgPCFFLAifmhGjI1lqugCPxhYfqSzTi+8xwSHmyYjQVLvuw0uy+SxgaMNRXQNoUi3nNaLZVZlqqe0mYwCEj51GRBHBZe6xIGYllfBk+2MnKjPy3t+brIqq7yrLNyMqj8S+MubWpb90ne7ktYpgn52nAe+IPFY1dK3zfaHflCeBb+H8MDAEtRVdEZD5+km6Uw0cO1O0FW6Qer7elLuKIF+qirpHflKBiy5+m+KwMaCXVT6gvp1UCWPnVEtpvqyLJYIjEH3Tr4lvSwx6WpuDUzrmsPFIMg5NPOYRK0oaA4FaSjniGbpmL1DsHohUyTf9Yuv8C+P0n9g==
     
   matrix:
     - M1=ONE
