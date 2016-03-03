@@ -4,12 +4,12 @@ language: node_js
 # Version number
 node_js:
   - 0.12
- # - 5.0
+  - 5
 
 env:
   global:
-    - APP_NAME=node-mongo-newbuild
-   # - secure: JEiqAwFKUDvaZUgPCFFLAifmhGjI1lqugCPxhYfqSzTi+8xwSHmyYjQVLvuw0uy+SxgaMNRXQNoUi3nNaLZVZlqqe0mYwCEj51GRBHBZe6xIGYllfBk+2MnKjPy3t+brIqq7yrLNyMqj8S+MubWpb90ne7ktYpgn52nAe+IPFY1dK3zfaHflCeBb+H8MDAEtRVdEZD5+km6Uw0cO1O0FW6Qer7elLuKIF+qirpHflKBiy5+m+KwMaCXVT6gvp1UCWPnVEtpvqyLJYIjEH3Tr4lvSwx6WpuDUzrmsPFIMg5NPOYRK0oaA4FaSjniGbpmL1DsHohUyTf9Yuv8C+P0n9g==
+    - APP_NAME=samplenode-heroku
+    - secure: oblpYnqRdl/uN561yPr6NYr2vehp1/uFLAzRcYDsmYMsUebXYvP6SyoaBeUD/T03Eq761oAC9gTgkI8gq267LMqcTy4wL+q0RP72G8WnS+wRuly1UCp8rCKI9cOulSDyg7gyZSEbMnid2+FbLo/agchOT8QeWdgyD3+dpKMBEVYb1EIZtJyazEuYy2S1eiBTPciZhQLrh3NqGaC443LuG3wfFZ6qZ5jb0bX9OgS9Lt7da1Y/cy9AwNgqh57BNrPOkgCFo4+KAtdXbHwF5L0rk+oTJyhgjuhCCoXbz75PKiwY3i+LLqFPG2k2thwGU0AckJRmrYeZEARZA+ZJ8rZN/w==
     
   matrix:
     - M1=ONE
@@ -20,6 +20,6 @@ build:
     - which heroku || wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
     - ps -eax
     - ls -al
-   # - test -f ~/.ssh/id_rsa.heroku || ssh-keygen -y -f /tmp/ssh/sub > ~/.ssh/id_rsa.heroku && heroku keys:add ~/.ssh/id_rsa.heroku
+    - test -f ~/.ssh/id_rsa.heroku || ssh-keygen -y -f /tmp/ssh/sub > ~/.ssh/id_rsa.heroku && heroku keys:add ~/.ssh/id_rsa.heroku
     - git remote -v | grep ^heroku || heroku git:remote --ssh-git --app $APP_NAME
-    - git push -f heroku master
+    - git push -f heroku $BRANCH:master
