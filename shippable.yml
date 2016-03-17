@@ -7,7 +7,7 @@ node_js:
 
 env:
   global:
-    - APP_NAME=samplenode-withouttolbelt
+    - APP_NAME=samplenode-withouttolbelt  
    # - FOO=FUBU
 
   matrix:
