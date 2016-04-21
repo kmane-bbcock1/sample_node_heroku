@@ -6,20 +6,20 @@ node_js:
   - 0.12
  # - 5.0
 
-env:
-  global:
-    - APP_NAME=node-mongo-newbuild
+#env:
+ # global:
+  #  - APP_NAME=node-mongo-newbuild
    # - secure: JEiqAwFKUDvaZUgPCFFLAifmhGjI1lqugCPxhYfqSzTi+8xwSHmyYjQVLvuw0uy+SxgaMNRXQNoUi3nNaLZVZlqqe0mYwCEj51GRBHBZe6xIGYllfBk+2MnKjPy3t+brIqq7yrLNyMqj8S+MubWpb90ne7ktYpgn52nAe+IPFY1dK3zfaHflCeBb+H8MDAEtRVdEZD5+km6Uw0cO1O0FW6Qer7elLuKIF+qirpHflKBiy5+m+KwMaCXVT6gvp1UCWPnVEtpvqyLJYIjEH3Tr4lvSwx6WpuDUzrmsPFIMg5NPOYRK0oaA4FaSjniGbpmL1DsHohUyTf9Yuv8C+P0n9g==
     
-  matrix:
-    - M1=ONE
+  #matrix:
+   # - M1=ONE
 
 build:
 
   ci:
-    - which heroku || wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
+    #- which heroku || wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
     - ps -eax
     - ls -al
    # - test -f ~/.ssh/id_rsa.heroku || ssh-keygen -y -f /tmp/ssh/sub > ~/.ssh/id_rsa.heroku && heroku keys:add ~/.ssh/id_rsa.heroku
-    - git remote -v | grep ^heroku || heroku git:remote --ssh-git --app $APP_NAME
-    - git push -f heroku master
+    #- git remote -v | grep ^heroku || heroku git:remote --ssh-git --app $APP_NAME
+    #- git push -f heroku master
